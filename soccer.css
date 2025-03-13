@@ -1,0 +1,16 @@
+.List ul{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
+}
+
+.Edin {
+    zoom: 75%;
+    display: block;
+    margin: 100px;
+}
+
+.Dallas {
+    display: block;
+    zoom: 75%
+}
