@@ -1,5 +1,45 @@
 body {
     background-color: #eff1ed;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+header {
+    display: flex;
+}
+
+h1 {
+    text-align: left;
+    font-size: 50px;
+    color:#373d20;
+    padding-left: 100px;
+    width: 35%;
+}
+
+.Links ul {
+    text-align: right;
+    padding-top: 30px;
+}
+
+.Links ul li {
+    display: inline-block;
+    min-width: 12rem;
+    text-align: center;
+    border-right: 1px solid #717744;
+    border-width: 2px;
+}
+
+.Links ul li:last-child {
+    border:none;
+}
+
+.Links ul li a { 
+    font-size: 30px;
+    color: #717744;
+}
+
+.Description {
+    display: flex;
 }
 
 .headshot {
@@ -12,35 +52,7 @@ body {
     border-style: solid;
 }
 
-.Description {
-    width: 50%;
-    font-size: 18px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 50px;
-    color:#373d20;
-}
-
-.Links ul li a { 
-    font-size: 30px;
-    color: #717744;
-}
-
-.Links ul {
-    width: 100vw;
-}
-
-.Links ul li{
-    display: inline-block;
-    padding: 0 0.5rem;
-    min-width: 12rem;
-    text-align: center;
-    border-right: 1px solid #717744;
-    border-width: 2px;
-}
-
-.Links ul li:last-child {
-    border:none;
+.Description p {
+    padding-left: 25px;
+    font-size: 25px;
 }
