@@ -7,6 +7,9 @@ body {
     height: 500px;
     border-radius: 50%;
     object-fit: cover;
+    border-color: #373d20;
+    border-width: 5px;
+    border-style: solid;
 }
 
 .Description {
@@ -20,7 +23,24 @@ h1 {
     color:#373d20;
 }
 
-.Links ul li a{
+.Links ul li a { 
     font-size: 30px;
     color: #717744;
+}
+
+.Links ul {
+    width: 100vw;
+}
+
+.Links ul li{
+    display: inline-block;
+    padding: 0 0.5rem;
+    min-width: 12rem;
+    text-align: center;
+    border-right: 1px solid #717744;
+    border-width: 2px;
+}
+
+.Links ul li:last-child {
+    border:none;
 }
