@@ -47,6 +47,19 @@ h1 {
     display: flex;
 }
 
+.head_shot_link {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+}
+
+
+.head_shot_link a {
+    font-size: 25px;
+    color: #766153;
+    padding-top: 10px;
+}
+
 .headshot {
     width: 400px;
     height: 500px;
@@ -61,4 +74,30 @@ h1 {
     padding-left: 25px;
     font-size: 25px;
     color: #373d20;
+}
+
+.Pages ul {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.Pages ul li {
+    display: inline-block;
+    min-width: 20rem;
+    text-align: center;
+    border-right: 1px solid #766153;
+    border-width: 2px;
+}
+
+.Pages ul li:last-child {
+    border:none;
+}
+
+.Pages ul li a { 
+    font-size: 30px;
+    color: #766153;
+}
+
+.Pages ul li a:hover {
+    color: #bcbd8b;
 }
