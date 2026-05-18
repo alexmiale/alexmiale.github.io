@@ -29,9 +29,39 @@
                     April 9th. 
                 </p>
                 <img src="images/poster.png" alt="RISE Poster">
-                <br>
-                <a href="../index.html">Back to homepage</a>
-                <br><br>
+                <hr>
+            </article>
+            <article class="main_description">
+                <p>
+                    In the 9 months I spent working on this project, I built two audio effects applications: one emulating an Ibanez
+                    TS9 Overdrive Pedal, and one emulating the LA-2A levelling compressor. Both of these plugins were built using C++,
+                    the JUCE Framework, <a href="https://github.com/jatinchowdhury18/RTNeural" target="_blank">RTNeural</a> inferencing 
+                    engine, and CMake for managing the build process. Both JUCE and RTNeural
+                    have example CMakeLists.txt files that aid with the process of including these solutions in your build. Also, both 
+                    audio plugins are dependent on these two packages already being installed, and having the correct paths in your 
+                    CMakeLists.txt file, which is the major reproducability drawback of the plugins at the moment. <br><br>
+                    
+                    The model used for the TS9 pedal was researched by Alec Wright and trained by Victor Zappi. In Professor Zappi's 
+                    <a href="https://github.com/victorzappi/LDSP" target="_blank">LDSP</a> repository, there is an examples folder 
+                    which contains a conditional and non-conditional model that emulates the pedal. This model is described as a 
+                    black-box model because the neural network contains the entire processing of the audio data. In other words, 
+                    the processing done to each sample of audio data is a black-box where the users and developers do not know what
+                    is being done to the sample. All we know is that, after the audio is passed through the model at inference, the 
+                    audio sounds distorted. <br><br>
+                    Our implementation of the model used a modified version of 
+                    <a href="https://github.com/GuitarML/NeuralPi" target="_blank">NeuralPi</a> that is present in Professor Zappi's
+                    repository. This was used to load in the model weights from a JSON file, before being loaded into an RTNeural object.
+                    RTNeural has classes for different layer types and activations which, depending on their size, become populated with
+                    data from JSON files. These layers and activation functions become wrapped in model objects that have forward functions
+                    to run the models in inference. The TS9 model consisted of one hidden layer of 20 LSTM units, followed by a fully-
+                    connected dense layer to one output node to represent the sample. The inputs to the model varied, with one input 
+                    representing just the sample as input, and input of 2 nodes for the sample and a conditioning paramter (the amount
+                    of distortion). There are two different builds for this part of the project, one with a conditioning parameter and 
+                    one without. You can access the GitHub repository <a href="https://github.com/alexmiale/AI_DistortionPedal/tree/main"
+                    target="_blank">here</a> to find the code and learn more about the building process. <br><br>
+                </p>
+                <div class="home"><a href="../index.html">Back to Homepage</a></div>
+                <hr>
             </article>
         </main>
     </body>

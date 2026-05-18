@@ -43,7 +43,9 @@ h1 {
     color: #bcbd8b;
 }
 
-.intro {
+main {
+    max-width: 75%;
+    margin: auto;
     font-size: 25px;
     color: #373d20;
 }
@@ -52,4 +54,17 @@ h1 {
     width: 100%;
     height: fit-content;
     border: #373d20 solid 2px;
+}
+
+
+.home {
+    text-align: center;
+}
+
+.main_description a {
+    color: #766153;
+}
+
+.main_description a:hover {
+    color: #bcbd8b;
 }
