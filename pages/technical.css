@@ -61,26 +61,3 @@ main {
 .home a:hover {
     color: #bcbd8b;
 }
-
-.intro img {
-    width: 100%;
-    height: fit-content;
-    border: #373d20 solid 2px;
-}
-
-
-.home {
-    text-align: center;
-}
-
-.top {
-    text-align: center;
-}
-
-.top a {
-    color: #766153;
-}
-
-.top a:hover {
-    color: #bcbd8b;
-}
