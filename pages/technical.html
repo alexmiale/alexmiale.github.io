@@ -29,6 +29,42 @@
                 </p>
                 <hr>
             </article>
+            <article class="descriptions">
+                <ul>
+                    <li>
+                        <a href="https://github.com/alexmiale/ds4420_project" target="_blank">xG and EPV Modelling</a>
+                        <p>
+                            Using Python and R, Komdean Masoumi and I created two models that predict the likelihood of a goal 
+                            being scored in a game of soccer from any given space on the field. EPV, or expected possession value
+                            is the likelihood of a goal being scored in that team's possession, based on the positions and speed
+                            of every player, the position of the ball, and the phase of play. xG, or expected goals, is the likelihood
+                            a goal is going to be scored given a shot is being taken. In our model, we included other variables such 
+                            as the angle to the goal, the number of players pressuring the ball, etc. Both models were trained on 
+                            data from SkillCorner, specifically 10 matches of the Australian A-League, but used different aspects of 
+                            the data, so two different preprocessing pipelines were created in Python. Then, the EPV model was created
+                            in Python using PyTorch, and the xG model was created in R using a manually implemented Monte-Carlo Markov
+                            Chain. 
+                        </p>
+                        <img class="ds4420" src="images/DS4420_Poster.png" alt="EPV and xG Poster">
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="https://github.com/aidanessig/4120-initial-investigation" target="_blank">Resume Prediction</a>
+                        <p>
+                            This project conducts experiments with modelling resume to job comparisons using different embeddings and 
+                            natural language processing (NLP) techniques. We looked to match a resume with a target job and rate the 
+                            comparison a continuous scale of 0 to 1. We began by establishing a baseline using TF-IDF embeddings and a 
+                            Linear Regression model, before moving to relativized DOLMA embeddings and experimenting with a Deep 
+                            Averaging Network, a LSTM, a hybrid BiLSTM, and finishing with a transformer from MiniLM. All preprocessing 
+                            and model experimentation was done in Python using PyTorch and other standard data science libraries like 
+                            numpy, pandas, and scikit-learn. 
+                        </p>
+                        <hr>
+                    </li>
+                </ul>
+            </article>
+            <div class="top"><a href="#top">Back to Top</a></div>
+            <hr>
         </main>    
     </body>
 </html>

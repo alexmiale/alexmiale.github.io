@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #eff1ed;
     padding-left: 125px;
@@ -44,7 +48,7 @@ h1 {
 }
 
 main {
-    max-width: 75%;
+    max-width: 85%;
     margin: auto;
     font-size: 25px;
     color: #373d20;
@@ -59,5 +63,41 @@ main {
 }
 
 .home a:hover {
+    color: #bcbd8b;
+}
+
+.descriptions ul {
+    list-style-type: none;
+}
+
+.descriptions li::marker {
+    content: "\27A4  "; /* Right arrow Unicode */
+    color: #766153;
+}
+
+.descriptions a {
+    font-size: 30px;    
+    color: #766153;
+}
+
+.descriptions a:hover {
+    color: #bcbd8b;
+}
+
+.descriptions img {
+    width: 100%;
+    height: fit-content;
+    border: #373d20 solid 2px;
+}
+
+.top {
+    text-align: center;
+}
+
+.top a {
+    color: #766153;
+}
+
+.top a:hover {
     color: #bcbd8b;
 }

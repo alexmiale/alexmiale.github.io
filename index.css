@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #eff1ed;
     padding-left: 125px;
@@ -32,6 +36,7 @@ h1 {
 
 .Links ul li:last-child {
     border:none;
+    
 }
 
 .Links ul li a { 
