@@ -72,9 +72,34 @@ main {
     border: #373d20 solid 2px;
 }
 
-
 .home {
     text-align: center;
+}
+
+.home a {
+    color: #766153;
+}
+
+.home a:hover {
+    color: #bcbd8b;
+}
+
+.descriptions ul {
+    list-style-type: none;
+}
+
+.descriptions li::marker {
+    content: "\27A4  "; /* Right arrow Unicode */
+    color: #766153;
+}
+
+.descriptions a {
+    font-size: 30px;    
+    color: #766153;
+}
+
+.descriptions a:hover {
+    color: #bcbd8b;
 }
 
 .top {

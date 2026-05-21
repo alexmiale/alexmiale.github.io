@@ -21,11 +21,12 @@
                 <p>
                     This page is dedicated to describing my technical projects from my coursework at Northeastern University.
                     I have been working on projects since the fall of 2022, usually contributing to multiple projects during 
-                    each semester thereafter. To not make the page unreadable, it will look similar to an annotated bibliography
-                    describing each of my projects, linking to the GitHub repository if I have access to it, and either images 
-                    showing the project in use or some graphs of data or predictions. My GitHub profile can be found at the top
-                    of the page where each, if not most, of my projects can be found. I will also link directly to each of the 
-                    projects in the descriptions below. 
+                    each semester thereafter. This spans my work as a Computer Science and Music Technology major before 
+                    switching to Data Science in the fall of 2024. To make the page more readable, it will look similar to an 
+                    annotated bibliography describing some of my projects, linking to the GitHub repository if I have access 
+                    to it, and either images showing the project in use or some graphs of data or predictions. My GitHub profile 
+                    can be found at the top of the page where each, if not most, of my projects can be found. I will also link 
+                    directly to each of the projects in the descriptions below. 
                 </p>
                 <hr>
             </article>
@@ -58,6 +59,36 @@
                             Averaging Network, a LSTM, a hybrid BiLSTM, and finishing with a transformer from MiniLM. All preprocessing 
                             and model experimentation was done in Python using PyTorch and other standard data science libraries like 
                             numpy, pandas, and scikit-learn. 
+                        </p>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GeorgeVassilakis/ds4440_final" target="_blank">Song Recommendation System - Spring 2025</a>
+                        <p>
+                            For the final project in the Practical Neural Networks, my group created a system that would recommend similar songs 
+                            upon providing an input song. The goal for this project was to create recommendations that weren't based on subjective
+                            metrics or popularity. The data used for this project was the DEAM dataset, a collection of 1802 songs used 
+                            initially for emotional analysis in the mid 2010s. This data was already preprocessed using openSMILE, which provided 
+                            us with information about valence, arousal, fundamental and partial frequencies, etc. For our network, we created 
+                            an autoencoder and a variational autoencoder. We started with a normal autoencoder to extract the embeddings layer and 
+                            carry out cosine similarity between each of the songs. We added a variational autoencoder to obtain a continuous 
+                            latent space, but still extracted the embeddings layer and performed cosine similarity. The final models were deployed in 
+                            a website on GitHub Pages that is accessible in the repository. 
+                        </p>
+                        <hr>
+                    </li>
+                    <li>
+                        <a href="https://github.com/alexmiale/Recidivism-Bias" target="_blank">Recidivism Bias - Fall 2024</a>
+                        <p>
+                            This was my final project for my Artificial Intelligence class where I analyzed the bias in the popular COMPAS
+                            dataset. This project was inspired by a 
+                            <a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm">ProPublica article</a>
+                            that identified the bias, and I decided to apply Aequitas to attempt to mitigate it. Aequitas is an open-sourced
+                            toolkit that is used for auditing models and making models more fair across sensitive attributes. In this case, 
+                            I used the DataRepairer class that balances the spread of data such that, when comparing across a given attribute, 
+                            the shapes of the predicted value graphs were the same. I was able to use Aequitas successfully and mitigate the 
+                            models' bias, while showing how the bias-variance tradeoff works in machine learning. I also wrote a paper for this 
+                            project, which is available in the 'Writings & Essays' page or in the repository. 
                         </p>
                         <hr>
                     </li>
