@@ -82,7 +82,8 @@
                         <p>
                             This was my final project for my Artificial Intelligence class where I analyzed the bias in the popular COMPAS
                             dataset. This project was inspired by a 
-                            <a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm">ProPublica article</a>
+                            <a href="https://www.propublica.org/article/how-we-analyzed-the-compas-recidivism-algorithm" 
+                            style="font-size: 25px;">ProPublica article</a>
                             that identified the bias, and I decided to apply Aequitas to attempt to mitigate it. Aequitas is an open-sourced
                             toolkit that is used for auditing models and making models more fair across sensitive attributes. In this case, 
                             I used the DataRepairer class that balances the spread of data such that, when comparing across a given attribute, 
@@ -90,12 +91,26 @@
                             models' bias, while showing how the bias-variance tradeoff works in machine learning. I also wrote a paper for this 
                             project, which is available in the 'Writings & Essays' page or in the repository. 
                         </p>
+                    </li>
+                    <hr>
+                    <li>
+                        <a href="code/render.cpp" target="_blank">Guitar Pedal Board - Spring 2024</a>
+                        <p>
+                            For the final project of my Embedded Audio Programming class, my group built a small pedal board for electric guitars.
+                            We did this using a Bela board and C++, developed using the Bela IDE. Our pedal board consisted of two effects, 
+                            a reverb and a flanger. We chained the effects such that the flanger would always process before the reverb, as the 
+                            reverse can introduce undesirable partials to the output. We built the pedal so both effects would have its own 
+                            on/off button, an LED to indicate if the effect was currently on or off, and a knob to control the wet/dry. Also, the 
+                            flanger had other knobs for the frequency, width, and depth. Because we used buttons to turn the effects on and off, 
+                            we implemented debouncing to make sure the buttons did not register multiple presses. The flanger was created using 
+                            a circular buffer and linear interpolation, while the reverb was made using a Schroeder allpass comb filter. 
+                        </p>
                         <hr>
                     </li>
                 </ul>
             </article>
             <div class="top"><a href="#top">Back to Top</a></div>
-            <hr>
+            <br>
         </main>    
     </body>
 </html>

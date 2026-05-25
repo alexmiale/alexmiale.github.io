@@ -65,3 +65,15 @@ main {
 .home a:hover {
     color: #bcbd8b;
 }
+
+.top {
+    text-align: center;
+}
+
+.top a {
+    color: #766153;
+}
+
+.top a:hover {
+    color: #bcbd8b;
+}
