@@ -90,6 +90,16 @@ main {
     border: #373d20 solid 2px;
 }
 
+.cs4120 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.cs4120 img {
+    width: 45%;
+}
+
 .top {
     text-align: center;
 }

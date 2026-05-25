@@ -20,9 +20,9 @@
                 <div class="home"><a href="../index.html">Back to Homepage</a></div>
                 <p>
                     I worked as a Research Assistant to Victor Zappi from August 2025 to April 2026. We titled the project
-                    "Real Time Processing of Musical AI Models." One goal of the project was to identity relevent literature
+                    "Real Time Processing of Musical AI Models." One goal of the project was to identity relevant literature
                     that researched and created musical AI models which emulate audio effects like distortions and flangers. 
-                    Professor Zappi identified that these effects models only existed in the literature without a way for musicians
+                    Professor Zappi identified that these models only existed in the literature without a way for musicians
                     to use them. We looked to create audio plugins, phone applications, and embedded devices that can run these 
                     effects in real-time for musicians to create and perform with. For myself, this project culminated in being awarded
                     the PEAK Fellowship: The Summit from Undergraduate Research and Fellowships (URF) at Northeastern University which 
@@ -54,26 +54,28 @@
                     repository. This was used to load in the model weights from a JSON file, before being loaded into an RTNeural object.
                     RTNeural has classes for different layer types and activations which, depending on their size, become populated with
                     data from JSON files. These layers and activation functions become wrapped in model objects that have forward functions
-                    to run the models in inference. The TS9 model consisted of one hidden layer of 20 LSTM units, followed by a fully-
-                    connected dense layer to one output node to represent the sample. The inputs to the model varied, with one input 
-                    representing just the sample as input, and input of 2 nodes for the sample and a conditioning paramter (the amount
+                    to run the models in inference. The TS9 model consisted of one hidden layer of 20 LSTM units, followed by a fully-connected 
+                    dense layer to one output node, representing the sample. The inputs to the model varied, with one input 
+                    representing just the sample as input, and an input of 2 nodes for the sample and a conditioning paramter (the amount
                     of distortion). There are two different builds for this part of the project, one with a conditioning parameter and 
                     one without. You can access the GitHub repository <a href="https://github.com/alexmiale/AI_DistortionPedal/tree/main"
-                    target="_blank">here</a> to find the code and learn more about the building process. <br><br>
+                    target="_blank">here</a> to find the code and learn more about the building process. 
+                    <br><br>
                     Our other project used a model, also researched by Alec Wright, emulating the LA-2A levelling compressor. The model
-                    weights were not present in the repository, so the data was downloaded, preprocessed, and trained the model in a Google
-                    Colab notebook. The repository linking the data, and containing the preprocessing and training scripts can be found
+                    weights were not present in the repository, so the data was downloaded and preprocessed according to the repository, 
+                    before training the model in a Google
+                    Colab notebook. The repository linking the data, and containing the preprocessing and training scripts, can be found
                     <a href="https://github.com/Alec-Wright/GreyBoxDRC" target="_blank">here</a>. The model had to be trained by us, so we
                     cloned the repository into Google Colab, loaded in a preprocessed version of the data, and utilized Colab's GPU to train
                     the model. We then exported the model's weights into a JSON file. 
                     <br><br>
                     There isn't much difference between this model implementation and the previous one. The CMake file was nearly identical 
-                    apart from the name of the project. This project used a simpler pipeline to load in the model weights from a JSON file.
-                    However, the purpose of this model is different from the previous. This model falls into the grey-box category, where the 
+                    apart from the name of the project. Also, this project used a simpler pipeline to load in the model weights from a JSON file.
+                    However, the purpose of this model is different from the first one. This model falls into the grey-box category, where the 
                     neural network does not encompass the entire processing pipeline. Instead, the neural network converts a single value into 
                     three, representing the paramters of this compressor (threshold, ratio, and knee-width). Then, these three parameters are 
-                    used in a standard digital signal processing (DSP) pipeline to limit the loudness of the output audio. This allows for greater
-                    control over the sound of the output audio and for easier assessment for any issues that are found. This DSP was created 
+                    used in a standard digital signal processing (DSP) pipeline to compress the loudness of the output audio. This allows for greater
+                    control over the sound of the output audio and for easier assessment for any bugs that are found. This DSP was created 
                     in Python in Alec Wright's implementation and translated in C++ for this version. While there were issues with the training
                     in Colab as the GPU was not being used to great effect, the audio plugin worked with its conditioning parameter. For more 
                     information or access to the code, the repository can be found <a href="https://github.com/alexmiale/GreyBoxDRC_JUCE/tree/main"
