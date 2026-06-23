@@ -13,90 +13,18 @@ header {
 }
 
 h1 {
-    text-align: left;
-    font-size: 50px;
-    color:#373d20;
-    padding-left: 100px;
-    width: 35%;
-    border-bottom: #373d20 solid 3px;
-}
-
-.Links ul {
-    text-align: right;
-    padding-top: 30px;
-}
-
-.Links ul li {
-    display: inline-block;
-    min-width: 12rem;
     text-align: center;
-    border-right: 1px solid #766153;
-    border-width: 2px;
-}
-
-.Links ul li:last-child {
-    border:none;
-    
-}
-
-.Links ul li a { 
-    font-size: 30px;
-    color: #766153;
-}
-
-.Links ul li a:hover {
-    color: #bcbd8b;
-}
-
-.Description {
-    display: flex;
-}
-
-.head_shot_link {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    padding-top: 20px;
-}
-
-
-.head_shot_link a {
-    font-size: 25px;
-    color: #766153;
-    padding-top: 10px;
-}
-
-.headshot {
-    width: 300px;
-    height: 400px;
-    border-radius: 50%;
-    object-fit: cover;
-    border-color: #373d20;
-    border-width: 5px;
-    border-style: solid;
-}
-
-.Description p {
-    padding-left: 25px;
-    font-size: 24px;
-    color: #373d20;
-}
-.Pages {
-    display: flex;
-    padding-top: 20px;
-}
-
-.Pages h2 {
-    text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color:#373d20;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
     border-bottom: #373d20 solid 3px;
-    width: 30%;
-    padding-bottom: 5px;
 }
 
 .Pages ul {
     text-align: right;
+    padding-top: 15px;
 }
 
 .Pages ul li {
@@ -118,4 +46,62 @@ h1 {
 
 .Pages ul li a:hover {
     color: #bcbd8b;
+}
+
+.Description {
+    display: flex;
+}
+
+.Description p {
+    padding-left: 25px;
+    font-size: 24px;
+    color: #373d20;
+}
+
+.head_shot_link {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+.head_shot_link p {
+    padding-left: 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.head_shot_link p + ul {
+    margin-top: -15px;
+}
+
+.head_shot_link ul {
+    text-align: left;
+}
+
+.head_shot_link ul li {
+    display: inline-block;
+    min-width: 15rem;
+    text-align: center;
+    border-right: 1px solid #766153;
+    border-left: 1px solid #766153;
+    border-width: 2px;
+}
+
+.head_shot_link ul li a { 
+    font-size: 30px;
+    color: #766153;
+}
+
+.head_shot_link ul li a:hover {
+    color: #bcbd8b;
+}
+
+.headshot {
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    border-color: #373d20;
+    border-width: 5px;
+    border-style: solid;
 }

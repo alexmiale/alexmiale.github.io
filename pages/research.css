@@ -13,37 +13,38 @@ header {
 }
 
 h1 {
-    text-align: left;
-    font-size: 50px;
+    text-align: center;
+    font-size: 40px;
     color:#373d20;
-    padding-left: 100px;
-    width: 35%;
+    width: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
     border-bottom: #373d20 solid 3px;
 }
 
-.Links ul {
+.Pages ul {
     text-align: right;
-    padding-top: 30px;
+    padding-top: 15px;
 }
 
-.Links ul li {
+.Pages ul li {
     display: inline-block;
-    min-width: 12rem;
+    min-width: 16rem;
     text-align: center;
     border-right: 1px solid #766153;
     border-width: 2px;
 }
 
-.Links ul li:last-child {
+.Pages ul li:last-child {
     border:none;
 }
 
-.Links ul li a { 
+.Pages ul li a { 
     font-size: 30px;
     color: #766153;
 }
 
-.Links ul li a:hover {
+.Pages ul li a:hover {
     color: #bcbd8b;
 }
 
@@ -68,7 +69,6 @@ main {
 
 .intro img {
     width: 100%;
-    height: fit-content;
     border: #373d20 solid 2px;
 }
 
