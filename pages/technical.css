@@ -68,11 +68,10 @@ main {
 }
 
 .descriptions ul {
-    list-style-type: none;
+    list-style-type: square;
 }
 
 .descriptions li::marker {
-    content: "\27A4  "; /* Right arrow Unicode */
     color: #766153;
 }
 

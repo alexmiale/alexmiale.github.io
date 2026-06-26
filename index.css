@@ -4,8 +4,8 @@ html {
 
 body {
     background-color: #eff1ed;
-    padding-left: 125px;
-    padding-right: 125px;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
 }
 
 header {
@@ -48,10 +48,6 @@ h1 {
     color: #bcbd8b;
 }
 
-.Description {
-    display: flex;
-}
-
 .Description p {
     padding-left: 25px;
     font-size: 24px;
@@ -62,6 +58,10 @@ h1 {
     display: flex;
     flex-direction: column; 
     align-items: center;
+    height: fit-content;
+    width: 325px;
+    float: left;
+    margin-right: 25px;
 }
 
 .head_shot_link p {

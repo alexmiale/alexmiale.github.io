@@ -67,6 +67,23 @@ main {
     color: #bcbd8b;
 }
 
+.descriptions ul {
+    list-style-type: square;
+}
+
+.descriptions li::marker {
+    color: #766153;
+}
+
+.descriptions a {
+    font-size: 30px;    
+    color: #766153;
+}
+
+.descriptions a:hover {
+    color: #bcbd8b;
+}
+
 .top {
     text-align: center;
 }

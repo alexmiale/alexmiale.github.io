@@ -84,15 +84,6 @@ main {
     color: #bcbd8b;
 }
 
-.descriptions ul {
-    list-style-type: none;
-}
-
-.descriptions li::marker {
-    content: "\27A4  "; /* Right arrow Unicode */
-    color: #766153;
-}
-
 .descriptions a {
     font-size: 30px;    
     color: #766153;
